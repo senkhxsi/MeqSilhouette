@@ -18,7 +18,7 @@ else:
         'numpy',
         'matplotlib',
         'simms',
-        'casatools==6.5.5.21',
+        'casatools',
         'casadata', 
         ]
 

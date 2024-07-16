@@ -60,7 +60,7 @@ def run_meqsilhouette(config=None):
     else:
         pass
     
-    if type(ms_dict['nu']) is not list
+    if type(ms_dict['nu']) is not list:
         ms_dict['nu'] = [ms_dict['nu']]
         parameters['bandpass_table'] = [parameters['bandpass_table']]
         
@@ -311,7 +311,7 @@ def run_meqsilhouette(config=None):
         # insert new plot here of coloured baselines and legend
 
         if parameters['exportuvfits']:
-            info('Exporting %s to uvfits file %s'%(MS,MS.replace('.ms','.uvfits')))
+            #info('Exporting %s to uvfits file %s'%(MS,MS.replace('.ms','.uvfits')))
             im.argo.icasa('exportuvfits', mult=[{'vis': v.MS, 'fitsfile': os.path.join(OUTDIR,v.MS.replace('.ms','.uvfits').replace('.MS','.uvfits'))}])
 
         # #Cleanup
